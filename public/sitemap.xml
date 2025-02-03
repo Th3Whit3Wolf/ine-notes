@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/CLI Tools/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/CLI Tools/crackmapexec/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/CLI Tools/dig/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/CLI Tools/nmap/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/exploited/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/extras/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/goals/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/host/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/ports/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/users/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Linux/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Linux/credential-dumping/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Linux/dumping-cracking/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Linux/exploitation/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Linux/persistence/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Linux/post-exploitation/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Linux/privilege-escalation/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Methodology/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Methodology/ctf-methodology/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-1-nmap-scan/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-2-1-general-procedures/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-2-service-enumeration/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-3-exploit/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-4-post-exploit-enumeration-and-privilege-escalation/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/ftp/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/http/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/smb/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/smtp/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/sql/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/ssh/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Windows/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Windows/credential-dumping/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Windows/dumping-cracking/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Windows/exploitation/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Windows/persistence/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Windows/post-exploitation/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Windows/privilege-escalation/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/bookmarks/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/ejpt-references/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/host-discovery/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/info-gathering-enumeration/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/mysql-cheat-sheet/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/pivoting/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/shells/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/writeup-template/</loc>
+    </url>
+</urlset>

@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset=UTF-8><link href=https://Th3Whit3Wolf.github.io/ine-notes/main.css rel=stylesheet><link href=https://www.getzola.org/favicon.ico rel=icon><meta content="width=device-width,initial-scale=1.0,maximum-scale=1" name=viewport><title> INE Notes | HTTP Enumeration </title><body><script>fetch(`https://api.github.com/repos/getzola/zola/releases/latest`).then(a=>a.json()).then(a=>{let b=a.name;let c=a.html_url;release.innerHTML=`<a href='${c}'>${b}</a>`})</script><main><nav><a href=https://Th3Whit3Wolf.github.io/ine-notes> <img alt=logo src=https://easydocs.codeandmedia.com/logo.svg> </a><div id=release></div><a class=ms-Icon--GlobalNavButton href=javascript:void(0); id=mobile onclick=burger()></a><div id=trees><input class=tree-toggle id=linux type=checkbox><label class=tree-toggle-label for=linux>Linux</label><ul class=subtree><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/credential-dumping/>Credential Dumping</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/dumping-cracking/>Dumping & Cracking</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/exploitation/>Exploitation</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/persistence/>Persistence</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/post-exploitation/>Post Exploitation</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/privilege-escalation/>Privilege Escalation</a></ul><input class=tree-toggle id=windows type=checkbox><label class=tree-toggle-label for=windows>Windows</label><ul class=subtree><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/credential-dumping/>Credential Dumping</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/dumping-cracking/>Dumping & Cracking</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/exploitation/>Exploitation</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/persistence/>Persistence</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/post-exploitation/>Post Exploitation</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/privilege-escalation/>Privilege Escalation</a></ul><input checked class=tree-toggle id=service-enumeration type=checkbox><label class=tree-toggle-label for=service-enumeration>Service Enumeration</label><ul class=subtree><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/ftp/">FTP Enumeration</a><li class=active><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/http/">HTTP Enumeration</a></li><ul id=toc><li><a href="
+                                                        https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/http/#nmap">NMAP</a><li><a href="
+                                                        https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/http/#dirb">DIRB</a><li><a href="
+                                                        https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/http/#metasploit">METASPLOIT</a><li><a href="
+                                                        https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/http/#wmap">WMAP</a><li><a href="
+                                                        https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/http/#other-cli-tools">OTHER CLI TOOLS</a></ul><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/smb/">SMB Enumeration</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/smtp/">SMTP Enumeration</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/sql/">SQL Enumeration</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/ssh/">SSH Enumeration</a></ul><input class=tree-toggle id=cli-tools type=checkbox><label class=tree-toggle-label for=cli-tools>CLI Tools</label><ul class=subtree><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/CLI Tools/dig/">Dig</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/CLI Tools/crackmapexec/">Crackmapexec</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/CLI Tools/nmap/">Nmap</a></ul><input class=tree-toggle id=exam-template type=checkbox><label class=tree-toggle-label for=exam-template>Exam Template</label><ul class=subtree><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/extras/">Extras</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/host/">Host</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/goals/">Goals</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/exploited/">Exploited</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/users/">Users</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/ports/">Ports</a></ul><input class=tree-toggle id=ctf-methodology type=checkbox><label class=tree-toggle-label for=ctf-methodology>CTF Methodology</label><ul class=subtree><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/ctf-methodology/>CTF Methodology</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-1-nmap-scan/>Step 1. Nmap Scan</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-2-service-enumeration/>Step 2. Service Enumeration</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-2-1-general-procedures/>Step 2.1 General Procedures</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-3-exploit/>Step 3. Post Exploit</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-4-post-exploit-enumeration-and-privilege-escalation/>Step 4. Post Exploit Enumeration</a></ul></div></nav><article><div id=on_right><span class=ms-Icon--Search id=search-ico></span></div><div class=search-container><input placeholder="Search as you type..." id=search type=search><div class=search-results><div class=search-results__header></div><ul class=search-results__items></ul></div></div><div id=wrap><h3 id=nmap>NMAP</h3><pre class=language-bash data-lang=bash style=color:#4f5b66;background-color:#eff1f5><code class=language-bash data-lang=bash><span style=color:#bf616a>sudo</span><span> nmap</span><span style=color:#bf616a> -p</span><span> 80</span><span style=color:#bf616a> -sV -O </span><span>&LTTARGET_IP>
+</span><span>
+</span><span style=color:#bf616a>nmap -p</span><span> 80</span><span style=color:#bf616a> --script</span><span>=http-enum</span><span style=color:#bf616a> -sV </span><span>&LTTARGET_IP>
+</span><span style=color:#bf616a>nmap -p</span><span> 80</span><span style=color:#bf616a> --script</span><span>=http-headers</span><span style=color:#bf616a> -sV </span><span>&LTTARGET_IP>
+</span><span style=color:#bf616a>nmap -p</span><span> 80</span><span style=color:#bf616a> --script</span><span>=http-methods</span><span style=color:#bf616a> --script-args</span><span> http-methods.url-path=/webdav/ &LTTARGET_IP>
+</span><span style=color:#bf616a>nmap -p</span><span> 80</span><span style=color:#bf616a> --script</span><span>=http-webdav-scan</span><span style=color:#bf616a> --script-args</span><span> http-methods.url-path=/webdav/ &LTTARGET_IP>
+</span></code></pre><h3 id=dirb>DIRB</h3><pre class=language-bash data-lang=bash style=color:#4f5b66;background-color:#eff1f5><code class=language-bash data-lang=bash><span style=color:#bf616a>dirb</span><span> http://&LTTARGET_IP>
+</span><span style=color:#bf616a>dirb</span><span> http://&LTTARGET_IP> /usr/share/metasploit-framework/data/wordlists/directory.txt
+</span></code></pre><h3 id=metasploit>METASPLOIT</h3><pre class=language-bash data-lang=bash style=color:#4f5b66;background-color:#eff1f5><code class=language-bash data-lang=bash><span style=color:#bf616a>use</span><span> auxiliary/scanner/http/brute_dirs
+</span><span style=color:#bf616a>use</span><span> auxiliary/scanner/http/robots_txt
+</span><span style=color:#bf616a>use</span><span> auxiliary/scanner/http/http_header
+</span><span style=color:#bf616a>use</span><span> auxiliary/scanner/http/http_login
+</span><span style=color:#bf616a>use</span><span> auxiliary/scanner/http/http_version
+</span><span>
+</span><span style=color:#a7adba># Global set
+</span><span style=color:#bf616a>setg</span><span> RHOSTS &LTTARGET_IP>
+</span><span style=color:#bf616a>setg</span><span> RHOST &LTTARGET_IP>
+</span><span>
+</span><span style=color:#a7adba>## set options depends on the selected module
+</span><span style=color:#96b5b4>set</span><span> HTTP_METHOD GET
+</span><span style=color:#96b5b4>set</span><span> TARGETURI /&LTDIR>/
+</span><span>
+</span><span style=color:#96b5b4>set</span><span> USER_FILE &LTUSERS_LIST>
+</span><span style=color:#96b5b4>set</span><span> PASS_FILE /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt
+</span><span style=color:#96b5b4>set</span><span> VERBOSE false
+</span><span style=color:#96b5b4>set</span><span> AUTH_URI /&LTDIR>/
+</span><span style=color:#bf616a>exploit
+</span></code></pre><h3 id=wmap>WMAP</h3><pre class=language-bash data-lang=bash style=color:#4f5b66;background-color:#eff1f5><code class=language-bash data-lang=bash><span style=color:#a7adba># WMAP in msfconsole
+</span><span style=color:#bf616a>load</span><span> wmap
+</span><span style=color:#bf616a>wmap_sites -a </span><span>&LTTARGET_IP>
+</span><span style=color:#bf616a>wmap_sites -l
+</span><span style=color:#bf616a>wmap_targets -t </span><span>&LTURL>
+</span><span style=color:#bf616a>wmap_targets -l
+</span><span>
+</span><span style=color:#bf616a>wmap_run -t
+</span><span style=color:#bf616a>wmap_run -e
+</span><span style=color:#bf616a>wmap_vulns -l
+</span><span>
+</span><span style=color:#a7adba># msfconsole
+</span><span style=color:#bf616a>use</span><span> auxiliary/scanner/http/http_put
+</span></code></pre><h3 id=other-cli-tools>OTHER CLI TOOLS</h3><pre class=language-bash data-lang=bash style=color:#4f5b66;background-color:#eff1f5><code class=language-bash data-lang=bash><span style=color:#bf616a>whatweb </span><span>&LTTARGET_IP>
+</span><span style=color:#bf616a>http </span><span>&LTTARGET_IP>
+</span><span style=color:#bf616a>browsh --startup-url</span><span> http://&LTTARGET_IP>
+</span><span>
+</span><span style=color:#bf616a>wget </span><span>&LTTARGET_IP>
+</span><span style=color:#bf616a>curl </span><span>&LTTARGET_IP> | </span><span style=color:#bf616a>more
+</span><span style=color:#bf616a>curl -I</span><span> http://&LTTARGET_IP>/&LTDIR>
+</span><span style=color:#bf616a>curl --digest -u </span><span>&LTUSER>:&LTPW> http://&LTTARGET_IP>/&LTDIR>
+</span><span>
+</span><span style=color:#bf616a>lynx </span><span>&LTTARGET_IP>
+</span></code></pre></div></article></main><script defer src=https://Th3Whit3Wolf.github.io/ine-notes/search_index.en.js></script><script defer src=https://Th3Whit3Wolf.github.io/ine-notes/fuse.js></script><script defer src=https://Th3Whit3Wolf.github.io/ine-notes/js.js></script>

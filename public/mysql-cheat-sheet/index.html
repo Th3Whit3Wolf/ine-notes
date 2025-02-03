@@ -1,0 +1,272 @@
+<!doctype html><html><head><meta charset=UTF-8><link href=https://Th3Whit3Wolf.github.io/ine-notes/main.css rel=stylesheet><link href=https://www.getzola.org/favicon.ico rel=icon><meta content="width=device-width,initial-scale=1.0,maximum-scale=1" name=viewport><title> INE Notes | MySQL Cheat Sheet </title><body><script>fetch(`https://api.github.com/repos/getzola/zola/releases/latest`).then(a=>a.json()).then(a=>{let b=a.name;let c=a.html_url;release.innerHTML=`<a href='${c}'>${b}</a>`})</script><main><nav><a href=https://Th3Whit3Wolf.github.io/ine-notes> <img alt=logo src=https://easydocs.codeandmedia.com/logo.svg> </a><div id=release></div><a class=ms-Icon--GlobalNavButton href=javascript:void(0); id=mobile onclick=burger()></a><div id=trees><input class=tree-toggle id=linux type=checkbox><label class=tree-toggle-label for=linux>Linux</label><ul class=subtree><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/credential-dumping/>Credential Dumping</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/dumping-cracking/>Dumping & Cracking</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/exploitation/>Exploitation</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/persistence/>Persistence</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/post-exploitation/>Post Exploitation</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Linux/privilege-escalation/>Privilege Escalation</a></ul><input class=tree-toggle id=windows type=checkbox><label class=tree-toggle-label for=windows>Windows</label><ul class=subtree><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/credential-dumping/>Credential Dumping</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/dumping-cracking/>Dumping & Cracking</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/exploitation/>Exploitation</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/persistence/>Persistence</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/post-exploitation/>Post Exploitation</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Windows/privilege-escalation/>Privilege Escalation</a></ul><input class=tree-toggle id=service-enumeration type=checkbox><label class=tree-toggle-label for=service-enumeration>Service Enumeration</label><ul class=subtree><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/ftp/">FTP Enumeration</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/http/">HTTP Enumeration</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/smb/">SMB Enumeration</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/smtp/">SMTP Enumeration</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/sql/">SQL Enumeration</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/ssh/">SSH Enumeration</a></ul><input class=tree-toggle id=cli-tools type=checkbox><label class=tree-toggle-label for=cli-tools>CLI Tools</label><ul class=subtree><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/CLI Tools/dig/">Dig</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/CLI Tools/crackmapexec/">Crackmapexec</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/CLI Tools/nmap/">Nmap</a></ul><input class=tree-toggle id=exam-template type=checkbox><label class=tree-toggle-label for=exam-template>Exam Template</label><ul class=subtree><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/extras/">Extras</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/host/">Host</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/goals/">Goals</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/exploited/">Exploited</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/users/">Users</a><li><a href="https://Th3Whit3Wolf.github.io/ine-notes/Exam Template/ports/">Ports</a></ul><input class=tree-toggle id=ctf-methodology type=checkbox><label class=tree-toggle-label for=ctf-methodology>CTF Methodology</label><ul class=subtree><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/ctf-methodology/>CTF Methodology</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-1-nmap-scan/>Step 1. Nmap Scan</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-2-service-enumeration/>Step 2. Service Enumeration</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-2-1-general-procedures/>Step 2.1 General Procedures</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-3-exploit/>Step 3. Post Exploit</a><li><a href=https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-4-post-exploit-enumeration-and-privilege-escalation/>Step 4. Post Exploit Enumeration</a></ul></div></nav><article><div id=on_right><span class=ms-Icon--Search id=search-ico></span></div><div class=search-container><input placeholder="Search as you type..." id=search type=search><div class=search-results><div class=search-results__header></div><ul class=search-results__items></ul></div></div><div id=wrap><p>MySQL is a popular open-source relational database management system known for its ease of use and scalability. Sometimes, you will need a little help while working on a project. That's why we created this MySQL Cheat Sheet.<p>Instructions for installing MySQL are available at: https://dev.mysql.com<h2 id=connecting-to-a-mysql-server>CONNECTING TO A MYSQL SERVER</h2><p>Connect to a MySQL server with a username and a password using the mysql command-line client. MySQL will prompt for the password:<pre class=language-shell data-lang=shell style=color:#4f5b66;background-color:#eff1f5><code class=language-shell data-lang=shell><span>mysql -u [username] -p
+</span></code></pre><p>To connect to a specific database on a MySQL server using a username and a password:<pre class=language-shell data-lang=shell style=color:#4f5b66;background-color:#eff1f5><code class=language-shell data-lang=shell><span>mysql -u [username] -p [database]
+</span></code></pre><p>To export data using the mysqldump tool:<pre class=language-shell data-lang=shell style=color:#4f5b66;background-color:#eff1f5><code class=language-shell data-lang=shell><span>mysqldump -u [username] -p \
+</span><span>[database] > data_backup.sql
+</span></code></pre><p>To exit the client:<pre class=language-shell data-lang=shell style=color:#4f5b66;background-color:#eff1f5><code class=language-shell data-lang=shell><span>quit or exit
+</span></code></pre><p>For a full list of commands:<pre class=language-shell data-lang=shell style=color:#4f5b66;background-color:#eff1f5><code class=language-shell data-lang=shell><span>help
+</span></code></pre><h2 id=creating-and-displaying>CREATING AND DISPLAYING</h2><h3 id=databases>DATABASES</h3><p>To create a database:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>CREATE DATABASE </span><span style=color:#8fa1b3>zoo</span><span>;
+</span></code></pre><p>To list all the databases on the server:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span>SHOW DATABASES;
+</span></code></pre><p>To use a specified database:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span>USE zoo;
+</span></code></pre><p>To delete a specified database:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>DROP DATABASE</span><span> zoo;
+</span></code></pre><p>To list all tables in the database:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span>SHOW TABLES;
+</span></code></pre><p>To get information about a specified table:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span>DESCRIBE animal;
+</span></code></pre><p>It outputs column names, data types, default values, and more about the table.<h3 id=creating-tables>CREATING TABLES</h3><p>To create a table:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>CREATE TABLE </span><span style=color:#8fa1b3>habitat</span><span> (
+</span><span>id </span><span style=color:#b48ead>INT</span><span>,
+</span><span>name </span><span style=color:#b48ead>VARCHAR</span><span>(</span><span style=color:#d08770>64</span><span>)
+</span><span>);
+</span></code></pre><p>Use AUTO_INCREMENT to increment the ID automatically with each new record. An AUTO_INCREMENT column must be defined as a primary or unique key:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span>
+</span><span style=color:#b48ead>CREATE TABLE </span><span style=color:#8fa1b3>habitat</span><span> (
+</span><span>id </span><span style=color:#b48ead>INT PRIMARY KEY</span><span> AUTO_INCREMENT,
+</span><span>name </span><span style=color:#b48ead>VARCHAR</span><span>(</span><span style=color:#d08770>64</span><span>)
+</span><span>);
+</span></code></pre><p>To create a table with a foreign key:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>CREATE TABLE </span><span style=color:#8fa1b3>animal</span><span> (
+</span><span>id </span><span style=color:#b48ead>INT PRIMARY KEY</span><span> AUTO_INCREMENT,
+</span><span>name </span><span style=color:#b48ead>VARCHAR</span><span>(</span><span style=color:#d08770>64</span><span>),
+</span><span>species </span><span style=color:#b48ead>VARCHAR</span><span>(</span><span style=color:#d08770>64</span><span>),
+</span><span>age </span><span style=color:#b48ead>INT</span><span>,
+</span><span>habitat_id </span><span style=color:#b48ead>INT</span><span>,
+</span><span style=color:#b48ead>FOREIGN KEY</span><span> (habitat_id)
+</span><span style=color:#b48ead>REFERENCES</span><span> habitat(id)
+</span><span>);
+</span></code></pre><h3 id=modifying-tables>MODIFYING TABLES</h3><p>Use the ALTER TABLE statement to modify the table structure.<p>To change a table name:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>ALTER TABLE </span><span>animal RENAME pet;
+</span></code></pre><p>To add a column to the table:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>ALTER TABLE </span><span>animal
+</span><span>ADD COLUMN name </span><span style=color:#b48ead>VARCHAR</span><span>(</span><span style=color:#d08770>64</span><span>);
+</span></code></pre><p>To change a column name:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>ALTER TABLE </span><span>animal
+</span><span>RENAME COLUMN id TO identifier;
+</span></code></pre><p>To change a column data type:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>ALTER TABLE </span><span>animal
+</span><span>MODIFY COLUMN name </span><span style=color:#b48ead>VARCHAR</span><span>(</span><span style=color:#d08770>128</span><span>);
+</span></code></pre><p>To delete a column:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>ALTER TABLE </span><span>animal
+</span><span>DROP COLUMN name;
+</span></code></pre><p>To delete a table:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>DROP TABLE</span><span> animal;
+</span></code></pre><h2 id=querying-data>QUERYING DATA</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To select data from a table, use the SELECT command.
+</span><span>An example of a single-table query:
+</span><span>SELECT species, AVG( age ) AS average_age
+</span><span>FROM animal
+</span><span>WHERE id != 3
+</span><span>GROUP BY species
+</span><span>HAVING AVG( age ) > 3
+</span><span>ORDER BY AVG( age ) DESC;
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>An example of a multiple-table query:
+</span><span>SELECT city.name, country.name
+</span><span>FROM city
+</span><span>[INNER | LEFT | RIGHT] JOIN country
+</span><span>ON city.country_id = country.id;
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>Use +, -, *, / to do some basic math.
+</span><span>To get the number of seconds in a week:
+</span><span>SELECT 60 * 60 * 24 * 7; -- result: 604800
+</span></code></pre><h2 id=aggregation-and-grouping>AGGREGATION AND GROUPING</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>AVG( expr ) − average value of expr for the group.
+</span><span>COUNT( expr ) − count of expr values within the group.
+</span><span>MAX( expr ) − maximum value of expr values within the
+</span><span>group.
+</span><span>MIN( expr ) − minimum value of expr values within the
+</span><span>group.
+</span><span>SUM( expr ) − sum of expr values within the group.
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To count the rows in the table:
+</span><span>SELECT COUNT( * )
+</span><span>FROM animal;
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To count the non-NULL values in a column:
+</span><span>SELECT COUNT( name )
+</span><span>FROM animal;
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To count unique values in a column:
+</span><span>SELECT COUNT( DISTINCT name )
+</span><span>FROM animal;
+</span></code></pre><h2 id=group-by>GROUP BY</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To count the animals by species:
+</span><span>SELECT species, COUNT( id )
+</span><span>FROM animal
+</span><span>GROUP BY species;
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To get the average, minimum, and maximum ages by habitat:
+</span><span>SELECT habitat_id, AVG( age ) ,
+</span><span>MIN( age ) , MAX( age )
+</span><span>FROM animal
+</span><span>GROUP BY habitat_id;
+</span></code></pre><h2 id=inserting-data>INSERTING DATA</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To insert data into a table, use the INSERT command:
+</span><span>INSERT INTO habitat VALUES
+</span><span>(1, 'River'),
+</span><span>(2, 'Forest');
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>You may specify the columns in which the data is added. The
+</span><span>remaining columns are filled with default values or NULLs.
+</span><span>INSERT INTO habitat (name) VALUES
+</span><span>('Savanna');
+</span></code></pre><h2 id=updating-data>UPDATING DATA</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To update the data in a table, use the UPDATE command:
+</span><span>UPDATE animal
+</span><span>SET
+</span><span>species = 'Duck',
+</span><span>name = 'Quack'
+</span><span>WHERE id = 2;
+</span></code></pre><h2 id=deleting-data>DELETING DATA</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To delete data from a table, use the DELETE command:
+</span><span>DELETE FROM animal
+</span><span>WHERE id = 1;
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>This deletes all rows satisfying the WHERE condition.
+</span><span>To delete all data from a table, use the TRUNCATE TABLE
+</span><span>statement:
+</span><span>TRUNCATE TABLE animal;
+</span></code></pre><h2 id=casting>CASTING</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>From time to time, you need to change the type of a value.
+</span><span>Use the CAST() function to do this.
+</span><span>In MySQL, you can cast to these data types:
+</span><span>CHAR NCHAR BINARY DATE DATETIME
+</span><span>DECIMAL DOUBLE FLOAT REAL SIGNED
+</span><span>UNSIGNED TIME YEAR JSON spatial_type
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To get a number as a signed integer:
+</span><span>SELECT CAST( 1234.567 AS signed ) ;
+</span><span>-- result: 1235
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To change a column type to double:
+</span><span>SELECT CAST( column AS double ) ;
+</span></code></pre><h2 id=try-out-the-interactive-sql-from-a-to-z-in-mysql-course-at-learnsql-com-and-check-out-our-other-sql-courses>Try out the interactive SQL from A to Z in MySQL course at LearnSQL.com , and check out our other SQL courses.</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>LearnSQL.com is owned by Vertabelo SA
+</span><span>vertabelo.com | CC BY-NC-ND Vertabelo SA
+</span></code></pre><h2 id=mysql-cheat-sheet>MySQL Cheat Sheet</h2><h3 id=text-functions>TEXT FUNCTIONS</h3><h4 id=filtering-the-output>FILTERING THE OUTPUT</h4><p>To fetch the city names that are not Berlin:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>SELECT</span><span> name
+</span><span style=color:#b48ead>FROM</span><span> city
+</span><span style=color:#b48ead>WHERE</span><span> name != '</span><span style=color:#a3be8c>Berlin</span><span>';
+</span></code></pre><h2 id=text-operators>TEXT OPERATORS</h2><p>To fetch the city names that start with a 'P' or end with an 's':<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>SELECT</span><span> name
+</span><span style=color:#b48ead>FROM</span><span> city
+</span><span style=color:#b48ead>WHERE</span><span> name LIKE '</span><span style=color:#a3be8c>P%</span><span>' OR name LIKE '</span><span style=color:#a3be8c>%s</span><span>';
+</span></code></pre><p>To fetch the city names that start with any letter followed by 'ublin' (like Dublin in Ireland or Lublin in Poland):<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>SELECT</span><span> name
+</span><span style=color:#b48ead>FROM</span><span> city
+</span><span style=color:#b48ead>WHERE</span><span> name LIKE '</span><span style=color:#a3be8c>_ublin</span><span>';
+</span></code></pre><h2 id=concatenation>CONCATENATION</h2><p>Use the CONCAT() function to concatenate two strings:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>SELECT </span><span style=color:#bf616a>**</span><span>CONCAT(</span><span style=color:#bf616a>** </span><span>'</span><span style=color:#a3be8c>Hi </span><span>', '</span><span style=color:#a3be8c>there!</span><span>' </span><span style=color:#bf616a>**</span><span>)</span><span style=color:#bf616a>**</span><span> ;
+</span><span style=color:#a7adba>-- result: Hi there!
+</span></code></pre><p>If any of the string is NULL, the result is NULL:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>SELECT </span><span style=color:#bf616a>**</span><span>CONCAT(</span><span style=color:#bf616a>**</span><span> Great '</span><span style=color:#a3be8c>, </span><span>'day'</span><span style=color:#a3be8c>, NULL **)** ;
+</span><span style=color:#a3be8c>-- result: NULL
+</span></code></pre><p>MySQL allows specifying a separating character (separator) using the CONCAT_WS() function. The separator is placed between the concatenated values:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>SELECT </span><span style=color:#bf616a>**</span><span>CONCAT_WS(</span><span style=color:#bf616a>** </span><span>' ', </span><span style=color:#d08770>1</span><span>, '</span><span style=color:#a3be8c>Olivier</span><span>',
+</span><span>'</span><span style=color:#a3be8c>Norris</span><span>' </span><span style=color:#bf616a>**</span><span>)</span><span style=color:#bf616a>**</span><span> ; </span><span style=color:#a7adba>-- result: 1 Olivier Norris
+</span></code></pre><h2 id=other-useful-text-functions>OTHER USEFUL TEXT FUNCTIONS</h2><p>To get the count of characters in a string:<pre class=language-SQL data-lang=SQL style=color:#4f5b66;background-color:#eff1f5><code class=language-SQL data-lang=SQL><span style=color:#b48ead>SELECT </span><span style=color:#bf616a>**</span><span>LENGTH(</span><span style=color:#bf616a>** </span><span>'</span><span style=color:#a3be8c>LearnSQL.com</span><span>' </span><span style=color:#bf616a>**</span><span>)</span><span style=color:#bf616a>**</span><span> ;
+</span><span style=color:#a7adba>-- result: 12
+</span></code></pre><p>To convert all letters to lowercase:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>SELECT </span><span style=color:#bf616a>**</span><span style=color:#96b5b4>LOWER</span><span>(</span><span style=color:#bf616a>** </span><span>'</span><span style=color:#a3be8c>LEARNSQL.COM</span><span>' </span><span style=color:#bf616a>**</span><span>)</span><span style=color:#bf616a>**</span><span> ;
+</span><span style=color:#a7adba>-- result: learnsql.com
+</span></code></pre><p>To convert all letters to uppercase:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>SELECT </span><span style=color:#bf616a>**</span><span style=color:#96b5b4>UPPER</span><span>(</span><span style=color:#bf616a>** </span><span>'</span><span style=color:#a3be8c>LearnSQL.com</span><span>' </span><span style=color:#bf616a>**</span><span>)</span><span style=color:#bf616a>**</span><span> ;
+</span><span style=color:#a7adba>-- result: LEARNSQL.COM
+</span></code></pre><p>To get just a part of a string:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>SELECT </span><span style=color:#bf616a>**</span><span style=color:#96b5b4>SUBSTRING</span><span>(</span><span style=color:#bf616a>** </span><span>'</span><span style=color:#a3be8c>LearnSQL.com</span><span>', </span><span style=color:#d08770>9 </span><span style=color:#bf616a>**</span><span>)</span><span style=color:#bf616a>**</span><span> ;
+</span><span style=color:#a7adba>-- result: .com
+</span><span style=color:#b48ead>SELECT </span><span style=color:#bf616a>**</span><span style=color:#96b5b4>SUBSTRING</span><span>(</span><span style=color:#bf616a>** </span><span>'</span><span style=color:#a3be8c>LearnSQL.com</span><span>', </span><span style=color:#d08770>1</span><span>, </span><span style=color:#d08770>5 </span><span style=color:#bf616a>**</span><span>)</span><span style=color:#bf616a>**</span><span> ;
+</span><span style=color:#a7adba>-- result: Learn
+</span></code></pre><p>To replace a part of a string:<pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span style=color:#b48ead>SELECT </span><span style=color:#bf616a>**</span><span>REPLACE(</span><span style=color:#bf616a>** </span><span>'</span><span style=color:#a3be8c>LearnSQL.com</span><span>', '</span><span style=color:#a3be8c>SQL</span><span>',
+</span><span>'</span><span style=color:#a3be8c>Python</span><span>' </span><span style=color:#bf616a>**</span><span>)</span><span style=color:#bf616a>**</span><span> ;
+</span><span style=color:#a7adba>-- result: LearnPython.com
+</span></code></pre><h2 id=numeric-functions>NUMERIC FUNCTIONS</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To get the remainder of a division:
+</span><span>SELECT MOD( 13, 2 ) ; -- result: 1
+</span><span>To round a number to its nearest integer:
+</span><span>SELECT ROUND( 1234.56789 ) ; -- result: 1235
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To round a number to three decimal places:
+</span><span>SELECT ROUND( 1234.56789, 3 ) ;
+</span><span>-- result: 1234.
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To round a number up:
+</span><span>SELECT CEIL( 13.1 ) ; -- result: 14
+</span><span>SELECT CEIL( -13.9 ) ; -- result: -
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>The CEIL(x) function returns the smallest integer not less than
+</span><span>x. To round the number down:
+</span><span>SELECT FLOOR( 13.8 ) ; -- result: 13
+</span><span>SELECT FLOOR( -13.2 ) ; -- result: -
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>The FLOOR(x) function returns the greatest integer not greater
+</span><span>than x. To round towards 0 irrespective of the sign of a number:
+</span><span>SELECT TRUNCATE( 13.56, 0 ) ; -- result: 13
+</span><span>SELECT TRUNCATE( -13.56, 1 ) ; -- result: -13.
+</span><span>To get the absolute value of a number:
+</span><span>SELECT ABS( -12 ) ; -- result: 12
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To get the square root of a number:
+</span><span>SELECT SQRT( 9 ) ; -- result: 3
+</span></code></pre><h2 id=useful-null-functions>USEFUL NULL FUNCTIONS</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To fetch the names of the cities whose rating values are not
+</span><span>missing:
+</span><span>SELECT name
+</span><span>FROM city
+</span><span>WHERE rating IS NOT NULL ;
+</span></code></pre><h2 id=coalesce-x-y>COALESCE(x, y, ...)</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To replace NULL in a query with something meaningful:
+</span><span>SELECT domain,
+</span><span>COALESCE( domain, 'domain missing' )
+</span><span>FROM contacts;
+</span><span>The COALESCE() function takes any number of arguments and
+</span><span>returns the value of the first argument that is not NULL.
+</span></code></pre><h2 id=nullif-x-y>NULLIF(x, y)</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To save yourself from division by 0 errors:
+</span><span>SELECT last_month, this_month,
+</span><span>this_month * 100.
+</span><span>/ NULLIF( last_month, 0 )
+</span><span>AS better_by_percent
+</span><span>FROM video_views;
+</span><span>The NULLIF(x, y) function returns NULL if x equals y, else it
+</span><span>returns the value of x value.
+</span></code></pre><h2 id=date-and-time>DATE AND TIME</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>There are 5 main time-related types in MySQL:
+</span><span>DATE TIME DATETIME TIMESTAMP YEAR
+</span><span>DATE – stores the year, month, and day in the YYYY-MM-DD
+</span><span>format.
+</span><span>TIME – stores the hours, minutes, and seconds in the HH:MM:SS
+</span><span>format.
+</span><span>DATETIME – stores the date and time in the YYYY-MM-DD
+</span><span>HH:MM:SS format. The supported range is '1000-01-
+</span><span>00:00:00' to '9999-12-31 23:59:59'.
+</span><span>TIMESTAMP – stores the date and time. The range is '1970-
+</span><span>01-01 00:00:01' UTC to '2038-01-19 03:14:07' UTC.
+</span><span>MySQL converts TIMESTAMP values from the current time zone
+</span><span>to UTC for storage, and back from UTC to the current time zone
+</span><span>for retrieval.
+</span><span>YEAR – stores the year in the YYYY format.
+</span></code></pre><h2 id=intervals>INTERVALS</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>An interval is the duration between two points in time.
+</span><span>To define an interval: INTERVAL 1 DAY
+</span><span>This syntax consists of the INTERVAL keyword, a value, and a
+</span><span>time part keyword (YEAR, QUARTER, MONTH, WEEK, DAY, HOUR,
+</span><span>MINUTE, SECOND, MICROSECOND).
+</span><span>You may combine different INTERVALs using the + or -
+</span><span>operator:
+</span><span>INTERVAL 1 YEAR + INTERVAL 3 MONTH
+</span><span>You may also use the standard SQL syntax:
+</span><span>INTERVAL '1-3' YEAR_MONTH
+</span><span>-- 1 year and 3 months
+</span><span>INTERVAL '3-12' HOUR_MINUTE
+</span><span>-- 3 hours 12 minutes
+</span></code></pre><h2 id=what-time-is-it>WHAT TIME IS IT?</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To answer this question, use:
+</span><span>CURRENT_TIME or CURTIME – to get the current time.
+</span><span>CURRENT_DATE or CURDATE – to get the current date.
+</span><span>NOW() or CURRENT_TIMESTAMP – to get the current
+</span><span>timestamp with both of the above.
+</span></code></pre><h2 id=creating-values>CREATING VALUES</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To create a date, time, or datetime, write the value as a string and
+</span><span>cast it to the proper type.
+</span><span>SELECT CAST( '2021-12-31' AS date ) ,
+</span><span>CAST( '15:31' AS time ) ,
+</span><span>CAST( '2021-12-31 23:59:29' AS datetime ) ;
+</span><span>You may skip casting in simple conditions; the database knows
+</span><span>what you mean.
+</span><span>SELECT airline, flight_no, departure_time
+</span><span>FROM airport_schedule
+</span><span>WHERE departure_time < '12:00';
+</span></code></pre><h2 id=extracting-parts-of-dates>EXTRACTING PARTS OF DATES</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To extract a part of a date, use the functions YEAR, MONTH, WEEK,
+</span><span>DAY, HOUR, and so on.
+</span><span>SELECT YEAR( CAST('2021-12-31' AS date) );
+</span><span>-- result: 2021
+</span><span>SELECT MONTH( CAST('2021-12-31' AS date) );
+</span><span>-- result: 12
+</span><span>SELECT DAY( CAST('2021-12-31' AS date) );
+</span><span>-- result: 31
+</span></code></pre><h2 id=date-arithmetics>DATE ARITHMETICS</h2><pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span>To add or subtract an interval </span><span style=color:#b48ead>from</span><span> a </span><span style=color:#b48ead>DATE</span><span>, use the ADDDATE()
+</span><span>function:
+</span><span>ADDDATE( '</span><span style=color:#a3be8c>2021-10-31</span><span>', INTERVAL </span><span style=color:#d08770>2</span><span> MONTH ) ;
+</span><span style=color:#a7adba>-- result: '2021-12-31'
+</span><span>ADDDATE( '</span><span style=color:#a3be8c>2014-04-05</span><span>', INTERVAL -</span><span style=color:#d08770>3</span><span> DAY ) ;
+</span><span style=color:#a7adba>-- result: '2014-04-02'
+</span></code></pre><pre class=language-sql data-lang=sql style=color:#4f5b66;background-color:#eff1f5><code class=language-sql data-lang=sql><span>To add or subtract an interval </span><span style=color:#b48ead>from</span><span> a </span><span style=color:#b48ead>TIMESTAMP </span><span>or </span><span style=color:#b48ead>DATETIME</span><span>,
+</span><span>use the TIMESTAMPADD() function:
+</span><span>TIMESTAMPADD( MONTH, </span><span style=color:#d08770>2</span><span>,
+</span><span>'</span><span style=color:#a3be8c>2014-06-10 07:55:00</span><span>' ) ;
+</span><span style=color:#a7adba>-- result: '2014-08-10 07:55:00'
+</span><span>TIMESTAMPADD( MONTH, -</span><span style=color:#d08770>2</span><span>,
+</span><span>'</span><span style=color:#a3be8c>2014-06-10 07:55:00</span><span>' ) ;
+</span><span style=color:#a7adba>-- result: '2014-04-10 07:55:00'
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To add or subtract TIME from a DATETIME, use the ADDTIME()
+</span><span>function:
+</span><span>ADDTIME( '2018-02-12 10:20:24', '12:43:02' ) ;
+</span><span>-- result: '2018-02-12 23:03:26'
+</span><span>ADDTIME( '2018-02-12 10:20:24', '-12:43:02' ) ;
+</span><span>-- result: '2018-02-11 21:37:22'
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To find the difference between two dates, use the DATEDIFF()
+</span><span>function:
+</span><span>DATEDIFF( '2015-01-01', '2014-01-02' ) ;
+</span><span>-- result: 364
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To find the difference between two times, use the TIMEDIFF()
+</span><span>function:
+</span><span>SELECT TIMEDIFF( '09:30:00', '07:55:00' ) ;
+</span><span>-- result: '01:35:00'
+</span></code></pre><pre style=color:#4f5b66;background-color:#eff1f5><code><span>To find the difference between two datetimes (in a given unit of
+</span><span>time), use the TIMESTAMPDIFF() function. Here's an example
+</span><span>with the difference given in weeks:
+</span><span>SELECT TIMESTAMPDIFF(
+</span><span>WEEK, '2018-02-26', '2018-03-21'
+</span><span>) ; -- result: 3
+</span></code></pre><h2 id=try-out-the-interactive-sql-from-a-to-z-in-mysql-course-at-learnsql-com-and-check-out-our-other-sql-courses-1>Try out the interactive SQL from A to Z in MySQL course at LearnSQL.com , and check out our other SQL courses.</h2><pre style=color:#4f5b66;background-color:#eff1f5><code><span>LearnSQL.com is owned by Vertabelo SA
+</span><span>vertabelo.com | CC BY-NC-ND Vertabelo SA
+</span></code></pre></div></article></main><script defer src=https://Th3Whit3Wolf.github.io/ine-notes/search_index.en.js></script><script defer src=https://Th3Whit3Wolf.github.io/ine-notes/fuse.js></script><script defer src=https://Th3Whit3Wolf.github.io/ine-notes/js.js></script>

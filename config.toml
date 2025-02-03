@@ -1,0 +1,33 @@
+base_url           = "https://Th3Whit3Wolf.github.io/ine-notes"
+build_search_index = true
+compile_sass       = true
+default_language   = "en"
+minify_html        = true
+title              = "INE Notes"
+
+[markdown]
+highlight_code  = true
+highlight_theme = "base16-ocean-light"
+
+[search]
+index_format = "fuse_javascript" # or "fuse_json"
+# Whether to include the title of the page/section in the index
+include_title = true
+# Whether to include the description of the page/section in the index
+include_description = false
+# Whether to include the RFC3339 datetime of the page in the search index
+include_date = false
+# Whether to include the path of the page/section in the index (the permalink is always included)
+include_path = false
+# Whether to include the rendered content of the page/section in the index
+include_content = true
+
+[extra]
+easydocs_logo_always_clickable = false
+favicon                        = "https://www.getzola.org/favicon.ico"
+logo                           = "https://easydocs.codeandmedia.com/logo.svg"
+release                        = "https://api.github.com/repos/getzola/zola/releases/latest"
+
+# Minimum number of headings needed on a page before the headings show in the navigation on the left. Defaults to 5.
+# Can be used for example to always show headings on each page by setting it to 1.
+easydocs_heading_threshold = 1

