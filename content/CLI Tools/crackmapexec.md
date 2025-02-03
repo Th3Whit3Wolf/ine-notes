@@ -3,7 +3,7 @@ title = "Crackmapexec"
 weight = 10
 +++
 
-# Crackmapexec
+# Crack Map Exec
 
 Strategically Mapping Targets inside the Internal Network
 

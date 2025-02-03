@@ -3,14 +3,16 @@ title = "SMTP Enumeration"
 weight = 40
 +++
 
-### NMAP
+# SMTP Enumeration
+
+### Nmap
 ```bash
 sudo nmap -p 25 -sV -sC -O <TARGET_IP>
 
 nmap -sV -script banner <TARGET_IP>
 ```
 
-### TELNET
+### Telnet
 ```bash
 nc <TARGET_IP> 25
 telnet <TARGET_IP> 25
@@ -20,12 +22,12 @@ HELO attacker.xyz
 EHLO attacker.xyz
 ```
 
-### SMTP USER ENUM
+### SMTP User Enum
 ```bash
 smtp-user-enum -U /usr/share/commix/src/txt/usernames.txt -t <TARGET_IP>
 ```
 
-### METASPLOIT
+### Metasploit
 ```bash
 service postgresql start && msfconsole -q
 

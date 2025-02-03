@@ -3,8 +3,9 @@ title = "SMB Enumeration"
 weight = 40
 +++
 
+# SMB Enumeration
 
-### NMAP
+### Nmap
 ```bash
 sudo nmap -p 445 -sV -sC -O <TARGET_IP>
 nmap -sU --top-ports 25 --open <TARGET_IP>
@@ -35,7 +36,7 @@ nmap -p 445 --script smb-os-discovery <TARGET_IP>
 nmblookup -A <TARGET_IP>
 ```
 
-### SMBMAP
+### SMB Map
 ```bash
 smbmap -u guest -p "" -d . -H <TARGET_IP>
 
@@ -72,7 +73,7 @@ enumdomgroups
 lookupnames admin
 ```
 
-### ENUM4LINUX
+### Enum 4 Linux
 ```bash
 enum4linux -o <TARGET_IP>
 enum4linux -U <TARGET_IP>
@@ -83,19 +84,19 @@ enum4linux -r -u "<USER>" -p "<PW>" <TARGET_IP>
 enum4linux -a -u "<USER>" -p "<PW>" <TARGET_IP>
 ```
 
-### HYDRA
+### Hydra
 ```bash
 gzip -d /usr/share/wordlists/rockyou.txt.gz
 
 hydra -l admin -P /usr/share/wordlists/rockyou.txt <TARGET_IP> smb
 ```
 
-### METASPLOIT
+### Metasploit
 ```bash
 msfconsole
 msfconsole -q
 
-# METASPLOIT SMB
+# Metasploit SMB
 use auxiliary/scanner/smb/smb_version
 use auxiliary/scanner/smb/smb_enumusers
 use auxiliary/scanner/smb/smb_enumshares

@@ -3,6 +3,8 @@ title = "Host Discovery"
 weight = 50
 +++
 
+# Host Discovery
+
 ```bash
 ## Ping scan
 sudo nmap -sn <TARGET_IP/NETWORK>

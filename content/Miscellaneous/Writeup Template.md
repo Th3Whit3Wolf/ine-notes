@@ -3,6 +3,8 @@ title = "Writeup Template"
 weight = 50
 +++
 
+# Writeup Example
+
 # **Nmap Results**
 
 ```text

@@ -3,7 +3,9 @@ title = "HTTP Enumeration"
 weight = 40
 +++
 
-### NMAP
+# HTTP Enumeration
+
+### Nmap
 ```bash
 sudo nmap -p 80 -sV -O <TARGET_IP>
 
@@ -13,13 +15,13 @@ nmap -p 80 --script=http-methods --script-args http-methods.url-path=/webdav/ <T
 nmap -p 80 --script=http-webdav-scan --script-args http-methods.url-path=/webdav/ <TARGET_IP>
 ```
 
-### DIRB
+### Dirb
 ```bash
 dirb http://<TARGET_IP>
 dirb http://<TARGET_IP> /usr/share/metasploit-framework/data/wordlists/directory.txt
 ```
 
-### METASPLOIT
+### Metasploit
 ```bash
 use auxiliary/scanner/http/brute_dirs
 use auxiliary/scanner/http/robots_txt
@@ -59,7 +61,7 @@ wmap_vulns -l
 use auxiliary/scanner/http/http_put
 ```
 
-### OTHER CLI TOOLS 
+### Other CLI Tools 
 ```bash
 whatweb <TARGET_IP>
 http <TARGET_IP>

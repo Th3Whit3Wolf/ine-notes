@@ -3,6 +3,8 @@ title = "Info Gathering & Enumeration"
 weight = 50
 +++
 
+# Information Gathering & Enumeration
+
 ### Info Gathering
 ```bash
 workspace -a <hostname_enum>

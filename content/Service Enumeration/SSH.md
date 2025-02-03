@@ -3,7 +3,9 @@ title = "SSH Enumeration"
 weight = 40
 +++
 
-### NMAP
+# SSH Enumeration
+
+### Nmap
 ```bash
 sudo nmap -p 22 -sV -sC -O <TARGET_IP>
 
@@ -16,24 +18,24 @@ nmap -p 22 --script=ssh-run --script-args="ssh-run.cmd=cat /home/student/FLAG, s
 nmap -p 22 --script=ssh-brute --script-args userdb=<USERS_LIST> <TARGET_IP>
 ```
 
-### NETCAT
+### NetCat
 ```bash
 nc <TARGET_IP> <TARGET_PORT>
 nc <TARGET_IP> 22
 ```
 
-### SSH CLIENT
+### SSH Client
 ```bash
 ssh <USER>@<TARGET_IP> 22
 ssh root@<TARGET_IP> 22
 ```
 
-### HYDRA
+### Hydra
 ```bash
 hydra -l <USER> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> ssh
 ```
 
-### METASPLOIT
+### Metaploit
 ```bash
 use auxiliary/scanner/ssh/ssh_login
 

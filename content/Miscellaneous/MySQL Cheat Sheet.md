@@ -3,6 +3,8 @@ title = "MySQL Cheat Sheet"
 weight = 50
 +++
 
+# MySQL Cheat Sheet
+
 MySQL is a popular open-source relational database
 management system known for its ease of use and scalability.
 Sometimes, you will need a little help while working on a project.
