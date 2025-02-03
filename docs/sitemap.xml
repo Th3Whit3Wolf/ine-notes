@@ -79,6 +79,33 @@
         <loc>https://Th3Whit3Wolf.github.io/ine-notes/Methodology/step-4-post-exploit-enumeration-and-privilege-escalation/</loc>
     </url>
     <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Miscellaneous/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Miscellaneous/bookmarks/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Miscellaneous/ejpt-references/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Miscellaneous/host-discovery/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Miscellaneous/info-gathering-enumeration/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Miscellaneous/mysql-cheat-sheet/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Miscellaneous/pivoting/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Miscellaneous/shells/</loc>
+    </url>
+    <url>
+        <loc>https://Th3Whit3Wolf.github.io/ine-notes/Miscellaneous/writeup-template/</loc>
+    </url>
+    <url>
         <loc>https://Th3Whit3Wolf.github.io/ine-notes/Service Enumeration/</loc>
     </url>
     <url>
@@ -119,29 +146,5 @@
     </url>
     <url>
         <loc>https://Th3Whit3Wolf.github.io/ine-notes/Windows/privilege-escalation/</loc>
-    </url>
-    <url>
-        <loc>https://Th3Whit3Wolf.github.io/ine-notes/bookmarks/</loc>
-    </url>
-    <url>
-        <loc>https://Th3Whit3Wolf.github.io/ine-notes/ejpt-references/</loc>
-    </url>
-    <url>
-        <loc>https://Th3Whit3Wolf.github.io/ine-notes/host-discovery/</loc>
-    </url>
-    <url>
-        <loc>https://Th3Whit3Wolf.github.io/ine-notes/info-gathering-enumeration/</loc>
-    </url>
-    <url>
-        <loc>https://Th3Whit3Wolf.github.io/ine-notes/mysql-cheat-sheet/</loc>
-    </url>
-    <url>
-        <loc>https://Th3Whit3Wolf.github.io/ine-notes/pivoting/</loc>
-    </url>
-    <url>
-        <loc>https://Th3Whit3Wolf.github.io/ine-notes/shells/</loc>
-    </url>
-    <url>
-        <loc>https://Th3Whit3Wolf.github.io/ine-notes/writeup-template/</loc>
     </url>
 </urlset>
